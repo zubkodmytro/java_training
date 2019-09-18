@@ -1,0 +1,44 @@
+The equals() method must be:
+
+1. reflexive: an object must equal itself
+2. symmetric: x.equals(y) must return the same result as y.equals(x)
+3. transitive: if x.equals(y) and y.equals(z) then also x.equals(z)
+4. consistent: the value of equals() should change only if a property that is contained in equals() changes (no randomness allowed)
+
+The hashCode() method:
+
+1. internal consistency: the value of hashCode() may only change if a property that is in equals() changes
+2. equals consistency: objects that are equal to each other must return the same hashCode
+3. collisions: unequal objects may have the same hashCode
+
+
+1. getClass()
+Повертає runtime клас даного об'єкта
+
+2. hashCode()
+Повертає значення хеш-коду даного об'єкта. (Integer)
+Якщо два об'єкти еквівалентні один одному згідно з методом equals(), то їхні хеш-коди мають бути однакові.
+Також варто зазначити, що у випадку коли об'єкти unequal, їхні хеш-коди не обов'язково мають бути різними.
+
+3. equals()
+Метод виступає індикатором того, чи є два об'єкти еквівалентні по відношенню один до одного.
+
+4. clone()
+Створює і повертає копію даного об'єкта
+
+5. toString()
+Повертає стрічкове представлення даного об'єкта
+
+6. finalize()
+Викликається прибиральником сміття над об'єктом, коли виявляється, що немає активних посилань на цей об'єкт.
+
+7. wait()
+Звільнює монітор і переводить викликаючий потік в стан очікування до тих пір, поки інший потік не викличе метод notify()
+
+8. notify()
+Продовжує работу потоку, в якого раніше був викликаний метод wait()
+
+9. notifyAll()
+Відновлює работу всіх потоків, в яких раніше був викликаний метод wait()
+
+
